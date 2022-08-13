@@ -24,7 +24,6 @@ def find_current_card_counter(flashcards_dir):
         print(f"Adding to cards found in {flashcards_dir}", os.listdir(flashcards_dir))
         cards=[card.split('.')[0] for card in os.listdir(flashcards_dir)]
         card_counters=[int(card.split('_')[-1]) for card in cards]
-        print(f'starting with card {max(card_counters)+1}')
         return max(card_counters)+1
     else:
         return 0
@@ -44,10 +43,10 @@ def new_deck(flashcards_dir):
         elif qa=='exit':
             making_cards=False
         elif '; ' not in qa:
-            print('(format must be of Q; A)')
+            print('format must be of  "Q"; "A"  or type "exit"')
         else:
             pass
-        print(cards.items())
+        
     
     for k,v in cards.items():
         filename=flashcards_dir+f"/card_{k}.json"
