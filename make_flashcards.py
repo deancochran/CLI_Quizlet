@@ -20,10 +20,11 @@ def parse_args():
     return parser.parse_args()
 
 def find_current_card_counter(flashcards_dir):
-    print(os.listdir(flashcards_dir))
     if os.listdir(flashcards_dir) != []:
+        print(f"Adding to cards found in {flashcards_dir}", os.listdir(flashcards_dir))
         cards=[card.split('.')[0] for card in os.listdir(flashcards_dir)]
         card_counters=[int(card.split('_')[-1]) for card in cards]
+        print(f'starting with card {max(card_counters)+1}')
         return max(card_counters)+1
     else:
         return 0
@@ -46,6 +47,8 @@ def new_deck(flashcards_dir):
             print('(format must be of Q; A)')
         else:
             pass
+        print(cards.items())
+    
     for k,v in cards.items():
         filename=flashcards_dir+f"/card_{k}.json"
         with open(filename, "w") as f:
@@ -71,7 +74,7 @@ def main(args):
     deck=Deck(decks_dir=decks_dir,name=name)
     new_deck(flashcards_dir)
     deck.load_flashcards(flashcards_dir)
-    print(deck.to_json())
+    deck.save_deck()
 
         
 
@@ -81,5 +84,6 @@ def main(args):
     
 
 if __name__ == "__main__":
+    os.system('clear')
     args=parse_args()
     main(args)

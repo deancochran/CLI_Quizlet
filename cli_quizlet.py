@@ -213,9 +213,14 @@ class Quiz():
         return data
 
 if __name__ == "__main__":
-    deck=Deck(decks_dir='decks', name="Demov2" )
-    deck.load_deck('decks/dean.json')
-    deck.save_deck()
-
-    print('\n')
+    os.system('clear')
+    deck=Deck(decks_dir='decks', name="" )
+    decks={filename.split('.')[0]: filename for filename in os.listdir('decks')}
+    flag=False
+    while flag==False:
+        print('Available Decks: ',list(decks.keys()))
+        name = str(input('Enter a Deck Name: '))
+        if name in list(decks.keys()):
+            flag=True
+    deck.load_deck(f'decks/{decks[name]}')
     Quiz(deck, 'results')
