@@ -93,14 +93,14 @@ class Deck():
             obj=json.loads(open(card_path,"rb").read())
             card=Flashcard(obj=obj)
             self.add_card(card)
-        print(f'Loaded Flashcards from {flashcards_path}')
+        print(f'Loaded Deck from {flashcards_path}')
 
     def load_deck(self, deck_path):
         self.name=deck_path.split("/")[-1].split(".")[0]
         obj=json.loads(open(deck_path,"rb").read())
         for _, v in obj.items():
             self.add_card(Flashcard(obj=v))
-        print(f'Loaded Deck: {self.name}')
+        print(f'Loaded Deck from {deck_path}')
         
     def save_deck(self):
         if not os.path.exists(self.decks_dir):

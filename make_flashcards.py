@@ -32,8 +32,14 @@ def new_deck(flashcards_dir):
     cards={}
     card_counter=find_current_card_counter(flashcards_dir)
     making_cards=True
+    help=False
     while making_cards:
-        print('\n','Enter a question and answer')
+        os.system('clear')
+        if help==True:
+            print('Enter a question and answer (format must be of  "Q"; "A"  or type "exit")')
+            help=False
+        else:
+            print('Enter a question and answer')
         qa = str(input('QA: '))
         if qa != "exit" and '; ' in qa:
             qa_list = qa.split('; ')
@@ -43,7 +49,7 @@ def new_deck(flashcards_dir):
         elif qa=='exit':
             making_cards=False
         elif '; ' not in qa:
-            print('format must be of  "Q"; "A"  or type "exit"')
+            help=True
         else:
             pass
         
@@ -53,6 +59,16 @@ def new_deck(flashcards_dir):
         with open(filename, "w") as f:
             f.write(json.dumps(v))
     print(f'Saved Flashcards in {flashcards_dir}')
+
+
+def is_satisfied(name):
+    yn = str(input(f'Do you want to overwrite deck {name} (Y/N): '))
+    if yn.lower() == "y":
+        return True
+    elif yn.lower() == "n":
+        return False
+    else:
+        return is_satisfied(name)
 
 def main(args):
     try:
@@ -69,7 +85,16 @@ def main(args):
 
     decks_dir=args.decks_parent_dir+f'/decks'
     flashcards_dir=args.flashcards_parent_dir+f'/flashcards'
-    name = str(input('Enter a new Deck Name: '))
+    satisfied=False
+    while satisfied==False:
+        print('Making Flashcards!')
+        decks={filename.split('.')[0]:filename for filename in os.listdir(decks_dir)}
+        print(list(decks.keys()))
+        name = str(input('Enter a new Deck Name: '))
+        if name in list(decks.keys()):
+            satisfied = is_satisfied(name)
+        os.system('clear')
+    
     deck=Deck(decks_dir=decks_dir,name=name)
     new_deck(flashcards_dir)
     deck.load_flashcards(flashcards_dir)
