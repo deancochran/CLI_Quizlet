@@ -1,5 +1,6 @@
 import json
 import os
+import time
 
 class Flashcard():
     def __init__(self,obj: dict, flashcards_path:str, card_index:int):
@@ -10,12 +11,21 @@ class Flashcard():
         self.skips=0
         self.flips=0
         self.side=0
+    
+    def get_q(self):
+        return self.q
+
+    def get_a(self):
+        return self.a
 
     def set_q(self, question):
         self.q=question
 
     def set_a(self, answer):
         self.a = answer
+
+    def set_card_index(self, card_index:int):
+        self.card_index = card_index
 
     def flip(self):
         if self.side == 0:
@@ -32,15 +42,16 @@ class Flashcard():
     def to_json(self):
         return {'q':self.q, 'a':self.a}
 
-    def save(self, flashcards_path: str):
-        file_path = os.path.join(flashcards_path, f"card_{self.card_index}"+'.json')
+    def save(self):
+        file_path = os.path.join(self.flashcards_path, f"card_{self.card_index}"+'.json')
+        print('attempting to save card', file_path)
         with open(file_path, "w") as f:
             f.write(json.dumps(self.to_json()))
 
     def remove(self):
         card_path = os.path.join(self.flashcards_path, f"card_{self.card_index}"+'.json')
+        print('attempting to remove card', card_path)
         os.remove(card_path)
-
     def prompt_user(self, key='q'):
         if key == 'q':
             keyword='Question'
@@ -65,26 +76,26 @@ class Flashcard():
     def show_editor(self):
         os.system('clear')
         print('Card Editor View')
-        print(' ')
+        print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
         print('Question: ', self.q)
         print('Answer: ', self.a)
-        print('')
-        print(f"""Action Keys: quit == " enter ", edit Answer == " A ",edit Question == " Q " """)
+        print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
+        print(f"""Action Keys: quit == " enter ", edit Answer == " A ", edit Question == " Q " """)
 
     def edit(self):
-        flag=False
-        while flag==False:
-            self.show_editor()
-            done=False
-            while done==False:
-                key = str(input(f'Enter a Action Key: '))
-                if key == "":
-                    pass
-                elif key.lower() == "a":
-                    self.set_a(self.prompt_user(key='a'))
-                    self.show_editor() 
-                elif key.lower() == "q":
-                    self.set_a(self.prompt_user(key='q'))
-                    self.show_editor() 
-                else:
-                    self.show_editor()
+        self.show_editor() 
+        done=False
+        while done==False:
+            key = str(input(f'Enter a Action Key: '))
+            if key == "":
+                done=True
+            elif key.lower() == "a":
+                self.set_a(self.prompt_user(key='a'))
+                self.show_editor() 
+            elif key.lower() == "q":
+                self.set_q(self.prompt_user(key='q'))
+                self.show_editor() 
+            else:
+                self.show_editor()
+
+        
