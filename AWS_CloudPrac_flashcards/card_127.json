@@ -1,0 +1,1 @@
+{"q": "What is the difference between IaaS and PaaS?", "a": "With IaaS the cloud provider provides the physical infrastructure. The customer provides and manages the virtual machines. With PaaS the cloud provider additionally provides the virtual machine, for example a SQL server, thereby providing a database platform in addition to the physical infra."}

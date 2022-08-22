@@ -1,0 +1,1 @@
+{"q": "How can I achieve compliance and security on AWS?", "a": "Data encryption (at rest, and in transit), IAM, Logs in CloudTrail, VPC Flow Logs, CloudWatch Logs"}
