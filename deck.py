@@ -151,4 +151,3 @@ class Deck():
         else:
             self.deck_editor(verbose=True)
 
-        
