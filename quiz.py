@@ -5,7 +5,7 @@ import json
 import os
 from flashcard import Flashcard
 class Quiz():
-    def __init__(self, name: str, cards: list[Flashcard], results_dir: str):
+    def __init__(self, name: str, cards, results_dir: str):
         
         self.name=name
         self.cards=cards

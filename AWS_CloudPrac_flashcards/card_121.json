@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"q": "Define the AWS Management Console", "a": "New Card Answer"}
+=======
+{"q": "What can limit the acess of a S3 bucket to a single user", "a": "IAM Policies"}
+>>>>>>> 29e248a6ad6908fce02a0b37e62fc24ca078b738

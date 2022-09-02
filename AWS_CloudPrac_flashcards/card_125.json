@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"q": "Define AWS Security Groups", "a": "New Card Answer"}
+=======
+{"q": "Which AWS service or feature can be used to prevent SQL injection attacks?", "a": "AWS WAF (web application firewall)"}
+>>>>>>> 29e248a6ad6908fce02a0b37e62fc24ca078b738
