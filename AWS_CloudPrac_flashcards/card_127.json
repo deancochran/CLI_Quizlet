@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-{"q": "Define AWS Service Health Dashboard", "a": "New Card Answer"}
-=======
-{"q": "What is the difference between IaaS and PaaS?", "a": "With IaaS the cloud provider provides the physical infrastructure. The customer provides and manages the virtual machines. With PaaS the cloud provider additionally provides the virtual machine, for example a SQL server, thereby providing a database platform in addition to the physical infra."}
->>>>>>> 29e248a6ad6908fce02a0b37e62fc24ca078b738

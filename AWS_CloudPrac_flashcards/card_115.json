@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-{"q": "Define AWS Command Line Interface (CLI)", "a": "New Card Answer"}
-=======
-{"q": "How can I achieve compliance and security on AWS?", "a": "Data encryption (at rest, and in transit), IAM, Logs in CloudTrail, VPC Flow Logs, CloudWatch Logs"}
->>>>>>> 29e248a6ad6908fce02a0b37e62fc24ca078b738

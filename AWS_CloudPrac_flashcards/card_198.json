@@ -1,1 +1,0 @@
-{"q": "Why us AWS more economical then traditional data centers for applications with varying compute workloads?", "a": "AWS offers the ability to lauch/terminate instances on demand in response to varying workloads. This is more economical than purchasing enough on premises servers to handle the peak load."}
