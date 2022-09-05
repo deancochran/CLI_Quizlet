@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 /results/*
-/AWS_CPP_flashcards
+*_flashcards/*
