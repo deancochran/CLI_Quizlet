@@ -1,0 +1,714 @@
+{
+    "014b3f72-79cb-4c84-9c8d-eab7dd1ab443": {
+        "q": "Define Amazon Rekognition",
+        "a": "Automated Image and Video Analysis"
+    },
+    "40375955-a96e-4c3e-8124-38107e94a8c0": {
+        "q": "Dedicated Hosts",
+        "a": "a physical serer allowing you to use your existing server bound licenses, and meet compliance requirements. Can be purchases on demand or as a reservation. up to 70% discount"
+    },
+    "57ee29be-319f-4176-a075-d9135937fffc": {
+        "q": "What is the pricing of lambda based on ",
+        "a": "The number of requests, and the runtime of the lambda function"
+    },
+    "10e86feb-0bb9-4e97-8fb2-fc8d486ba1b6": {
+        "q": "Define Route 53",
+        "a": "Route 53 is a highly available domain name system (DNS) service. Simple routing is used for a single resource that performs a function for your domain. Failover routing is for active to passice failovers. Geolocation routing takes into account the geolocation of the requester. Geoproximity routes based off the prximity to the resource center. Latency routing takes into account the best performance for the requester. Weighted routing propotions the amount of requests at each available resource."
+    },
+    "7a3a0788-9431-4c38-9369-5f62cb461aa5": {
+        "q": "Define Function as a Service",
+        "a": "This is a category that provides a developing platform which can be run and managed. (Essentially AWS Lambda)"
+    },
+    "247f36db-72fb-4f19-bde5-15508bdee571": {
+        "q": "Define Service Quotas",
+        "a": "Service quotas enables you to view and manage your quotas for AWS Services  frpm a central location"
+    },
+    "6b41b267-a975-4839-a33f-2844e514b8b7": {
+        "q": "AWS Config",
+        "a": "a service that enables you to assess, audit, and evalutate the configuration of your AWS resources. "
+    },
+    "7c35757d-0732-455c-a7c8-fe43c7d9f769": {
+        "q": "Define Amazon Inspector",
+        "a": "An automated security assessment service to improve the security and compilance of applications deployed on AWS (like EC2s)"
+    },
+    "c952e6a0-9694-4f18-8ea8-e816e42a1ce4": {
+        "q": "Define Amazon Translate",
+        "a": "Text to Text (different language)"
+    },
+    "bddd1ec4-2d11-4de6-9e39-28875e29308d": {
+        "q": "Define AWS CloudFront",
+        "a": "A fast content delivery network service that securely delivers data, vides, apps, and apis to global customers. This can be paired with edge locations to create caches of information to increae overall read performance of a web based app."
+    },
+    "b6aa2447-e2cf-412b-a84b-2f8ff706a406": {
+        "q": "Define AWS Beanstalk",
+        "a": "an easy to use service for deploying and scaling web applications and services. You simply uploadyour code and Elastic Beanstalk automatically handles deployment, and provisions the necessary servers."
+    },
+    "01d95d4c-866c-4087-be89-701bf9169bb0": {
+        "q": "What is active to active",
+        "a": "Traffic is load-shared between interfaces based on flow. If one connection becomes unavailable, then all traffic is routed through the other connection."
+    },
+    "5ece1a1b-0ca3-4a0a-ad29-678cab4ffa27": {
+        "q": "Define AWS Budgets",
+        "a": "a service that provides you with the ability to set up customized spending budgets that alert you when you approach/exceed/ or underutilize your allocated amount. Can be used at the monthly/quarterly/yearly level."
+    },
+    "f9dac790-82ce-47a7-a021-2a96123c8d2c": {
+        "q": "Describe cost allocation tags",
+        "a": "this is a simple label that you or aws assigns to a resource. The tag is a key value pairing where each tag key must be unique. Both user defined and aws defined tags must be actviated before they show up in cost explorer."
+    },
+    "596070e5-639d-4101-ae87-f086269eda1f": {
+        "q": "Amazon Polly",
+        "a": "Text to speech"
+    },
+    "7a90c0a7-97c5-4c68-90f5-77d9378b3a7d": {
+        "q": "Describe Network load balancers",
+        "a": "Best suited for balancing transmission control protocol (TCP), User Datagram protocol (UDP), and transport layer security (TLS) traffic where extreeme performance is required."
+    },
+    "6ebad2ab-b1ad-4608-ac51-d89488b2477c": {
+        "q": "Define Amazon Comprehend",
+        "a": "NLP machine learning "
+    },
+    "dfe5ee6a-f00c-4734-bc95-8a866fc4673c": {
+        "q": "Define the AWS price calcuator",
+        "a": "lets you explore the cost of AWS services and create an estimate of the cost of your use cases on AWS"
+    },
+    "12dea307-32ef-4cfd-ad6b-c9159518bf74": {
+        "q": "Define Amazon Workspaces",
+        "a": "AWS Workspaces is a managed, secure Desktop as a service solution to provide workers globally to access region limited services."
+    },
+    "83a08fdc-d692-492f-ad67-8080cb89e01f": {
+        "q": "Define AWS Auto Scaling",
+        "a": "Auto sclaing monitors apps ans automatically adjusts capcity to maintain steady, predictable performance at the lowest possible cost."
+    },
+    "69f19fff-64b6-4597-8c08-0b34f47e88ec": {
+        "q": "Define AWS Storage Gateway",
+        "a": "a hybrid cloud storage service that connets your existing on premises enviornments with the AWS Cloud"
+    },
+    "29fe9fdd-d8ad-44c8-abb7-c16ebb5c3dbe": {
+        "q": "Describe spot instances",
+        "a": "up to 90% off, good for low compute apps and urgent computing needs"
+    },
+    "744459c6-caa3-4f22-b540-51b60a58f4f6": {
+        "q": "Describe S3 Glacier",
+        "a": "A secure durable extremely low cost Amazon storage class for data archiving and long term backup. Does not support rapid data retrieval "
+    },
+    "f9707c9a-6ea0-4723-8b9b-91b759715cf3": {
+        "q": "Define Amazon Lightsail",
+        "a": "An easy to use, cloud platform that offiers you everything needed to build an application or website, plus a cost effective, monthly plan. "
+    },
+    "e9703b00-04d8-42c3-b8a3-c14b7e4939af": {
+        "q": "Define Amazon SageMaker",
+        "a": "Amazon Sagemaker is a fully managed platform that enables developers and data scientitst to buid train and deploy ML models."
+    },
+    "7aa64c58-7ba9-4241-9c20-9ec8779ae62e": {
+        "q": "Define S3 Glacier Deep Archive",
+        "a": "Lowest cost storage class that supports long term retention and digital preservation for data that may be accessed once or twince in a year. with retrieal timeof 12/48 hours. "
+    },
+    "09035b9b-a1df-4165-884c-c46fbb3bcb8a": {
+        "q": "what IAM tools allows you to review permissions granted to users",
+        "a": "IAM access advisor"
+    },
+    "d77adedf-d920-4850-85a0-072a0619949a": {
+        "q": "Define the AWS Acceptable use policy",
+        "a": "describes prohibited uses of the web services offered by Amazon Web Services"
+    },
+    "26347d4b-398d-4acc-83c7-f22c15b6ea58": {
+        "q": "What service helps you identify the MOST optimal resource configuration for any workload, to reduce cost, and increase performance.",
+        "a": "AWS Compute Optimizer"
+    },
+    "0b436a24-31d5-440d-8e1a-4878a386fa10": {
+        "q": "Define AWS GaurdDuty",
+        "a": "GuardDuty monitors for threats, malicious activity, and unauthorized behaviour to protect your AWS account."
+    },
+    "2afeb75b-f8d5-40bb-8f21-69cc33a539ea": {
+        "q": "Define AWS IAM",
+        "a": "Amazon Identity and Access Management allows you to manage access to services and resources securely. You can create users/groups and allocate their permissions."
+    },
+    "d9d6a263-2d17-4e12-b89e-b822590172b8": {
+        "q": "Design prinicples of cost optimization",
+        "a": "Implement cloud financial management, adpot a consumption model, measure overall efficiency, stop spending money on undfiferentiated heavy lifting, analyze and attribute expenditure"
+    },
+    "b0de03c6-4dbe-48f0-b04d-64668b1ead2a": {
+        "q": "Define Amazon Sumerian",
+        "a": "A 3d visual modeling tool provided by AWS"
+    },
+    "b81eb2b0-2c71-4f74-949a-73e879e670b4": {
+        "q": "Describe AWS KMS",
+        "a": "The Amazon Key Management Service (KMS) offers additional benefits that S3 server side encryption does not offer (audit trail, unauthorized access protection)"
+    },
+    "fc6e6ad8-1484-4882-bd15-44ab6966f0ed": {
+        "q": "What two services in combinatino can send alerts of a root account sign in",
+        "a": "SNS and CloudWatch"
+    },
+    "253380d2-3ef4-47cd-8e95-8d6185268838": {
+        "q": "Design prinicples of Sustainability pillar",
+        "a": "Understand your impact, esatblish sustainability goals, maximize utilization, anticipate and adpot new, more efficent hardware, use manage services, reduce downstream impact of cloud workloads"
+    },
+    "03417ea7-a6d4-4f05-a5b9-f65ab150ea61": {
+        "q": "What is IaaS",
+        "a": "Infrastructure holds the building blocks of the cloud IT. Access to networking features, computers, and data storage. Holds the Highest level of flexibilty. (This is EC2)"
+    },
+    "c81a75bb-d33e-4781-a125-99c6e873a9dc": {
+        "q": "DEfine AWS Service Catalog",
+        "a": "alllows organizations to create and amange catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual amchine images, servers, software, and datbases to complete multitier apps"
+    },
+    "849e505d-abeb-4e33-adc3-8185512174bf": {
+        "q": "Define CMK",
+        "a": "A customer master key is holds the necessary data to encrypt/decrypt data. They can be managed by the AWS Customer, and access to the keys can be managed in IAM."
+    },
+    "08d82412-8457-48a5-ba47-c6b9c25132a9": {
+        "q": "Define AWS Lambda",
+        "a": "AWS Lambda is a serverless service that allows you to run code without provisioning or managing servers. You only pay for the compute time consumed."
+    },
+    "b2ec52c5-722e-42b8-9080-8afc9791436b": {
+        "q": "Describe layer 7",
+        "a": "HTTP/HTTPS requests at the application layer"
+    },
+    "007e3afd-d4b8-40c0-b455-10a3b5709a57": {
+        "q": "Desgin principles of security pillar",
+        "a": "Implement strong Identity foundation, enable tracability, apply security at all layers, automate security best practices, prtect data in transit/rest"
+    },
+    "c5d76218-8334-4ad9-adbf-61891f5dacab": {
+        "q": "Define Security Groups for Amazon VPCs",
+        "a": "You can only specify allow rules. You can specified different rules ofr inbound/outbound traffic. By default, there are no inbound rules, and allows all outbound traffic. Security Groups are stateful, and are located at the instance level. Can only belong to one VPC"
+    },
+    "763e1962-601f-454f-84d7-d472f8124b6e": {
+        "q": "Define NACLs",
+        "a": "Network Access Control Lists (NACLs) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. NACLs are stateless."
+    },
+    "51dd2b95-9453-4fc0-a5d8-ded89be998d8": {
+        "q": "What are the pillars of the AWS Well architected framework",
+        "a": "Operational Excellence, Security, Reliability, Performance efficiency, cost optimization, sustainability"
+    },
+    "6a1082da-a9a4-4932-a9bc-7f45dd675217": {
+        "q": "What are the three different budget types",
+        "a": "Cost, Usage, and reservation budgets"
+    },
+    "0bb7f301-743d-47e9-9fca-ea758c6b3070": {
+        "q": "Describe penetration testing",
+        "a": "AWS customers carrying out security assessments or tests against their own infrastructure without prior approval."
+    },
+    "d8300702-5db5-4c20-89c8-134bb18dd227": {
+        "q": "Define the AWS Management Console",
+        "a": "The console's home page after logging into AWS"
+    },
+    "119acfaa-14b6-4e4c-a890-8e73c6812ced": {
+        "q": "Define Amazon ECS",
+        "a": "ECS is a service that supports DOcker containers and allows you to easily run apps on a managed cluster of Amazon EC2 instances"
+    },
+    "1fca674b-4c8f-41cc-8c6a-c16d5d9262a5": {
+        "q": "Describe S3 Managed Keys",
+        "a": "a server side encryption method that encrypts objects after they reach amazon S3 buckets with a key that is automatically rotated"
+    },
+    "15a2345e-602d-4a04-b9a6-35003b07a431": {
+        "q": "Define Amazon Kinesis ",
+        "a": "Define Amazon Kinesis processes real time streaming data to get analytical results. (Videos, media, website clickstreams, etc..)"
+    },
+    "853b005a-8304-4227-bba7-46250dcafa33": {
+        "q": "What service will help organizations with many VPCs connect for better ccollaboration",
+        "a": "AWS Transit Gateway"
+    },
+    "3e18371a-d0a9-472a-ace4-301a9f675231": {
+        "q": "Describe layer 3",
+        "a": "The netowrk layer desides which physcial path data will take when it moves on the network. WAF doesn't provide protection here. AWS Sheild provides protection here."
+    },
+    "665c5948-eaf8-45dd-8127-adf170ab8bc8": {
+        "q": "Define port 443",
+        "a": "HTTPS Traffic"
+    },
+    "dbe5ef2e-cd38-4c15-8977-e575b62fa2a1": {
+        "q": "Define AWS CodeStar",
+        "a": "a cloud based development service that provides the tools you need to quickly develop, build, and deploy apps"
+    },
+    "c546d2df-0356-4eef-a12d-08ebf626f96d": {
+        "q": "Design prinicples of Reliability",
+        "a": "automate recovery from failure, test recovery procedures, scale horizontally, stop guessing capacity, manage change in automation"
+    },
+    "b17ee628-f9cc-414c-9abd-d5d456a4290f": {
+        "q": "Describe Amazon DynamoDB with Global Tables",
+        "a": "DynamoDB is a fully managed, serverless, key-value noSQL database desgined to run performance apps at any scale. The Global Tables extension to this database replicates data automatically across AWS regions, and scales to accomodate your workloads with single digit millisecond I/O performance"
+    },
+    "d18d9094-8dd1-4fb9-bfcd-f9a201606f90": {
+        "q": "Describe the Buisness Support Plan",
+        "a": "For production workloads and 24/7 phone/email/chat technical support. Fully access to trusted advisor"
+    },
+    "241d9fbb-38d4-4015-8d06-428751dbe7a7": {
+        "q": "describe S3 lifecycle rules",
+        "a": "to manage s3 objects so they are stored in a cost effective manner, lifecycle rules allow you to trznsition the objects to less extensive storage classes, archive them, or even delete them.p"
+    },
+    "cb07fbd8-026d-4141-abf9-6c187b758a57": {
+        "q": "Define Amazon SQS",
+        "a": "A fully managed servicex that enables you to decouple ans scale microservices, distributed sytems, and serverless apps. You can send, store, and recieve messages between software components without requirements."
+    },
+    "4fdfe5c9-ee7d-4245-bf33-287f1f1f20e9": {
+        "q": "What service can help implement Chaos Engineering",
+        "a": "AWS Fault injection"
+    },
+    "25767d62-87f7-4ff0-b652-83dd518f4d90": {
+        "q": "Describe Amazon DynamoDB with DAX",
+        "a": "DynamoDB Accelerator (DAX) is an in memory cache that delivers fast read performance of you DynamoDB tables by up to 10 times. (not active to active)"
+    },
+    "5dd3b97e-75b2-45cd-b4cc-3583fa3aa35b": {
+        "q": "Define AWS VPN",
+        "a": "A VPN establishes a secure connection between on premise netowrks, remote offices, client devices, and the global AWS network. Comprised of Site-Site or Client VPN"
+    },
+    "ce2db856-990b-4231-a266-aa2571b5bcc4": {
+        "q": "Describe S3 SRR and CRR",
+        "a": "Same region replication helps when you want to aggregate logs into a single bucket, configure live replication between product/test accounts, and abide by data sovereignty laws. Cross region replication is helpful when you need to meet compliance requirements, minimize latency, and increase operational latency"
+    },
+    "6cb1ce92-56cd-46b3-96d5-f6b0d47d5edd": {
+        "q": "Define NAT Gateways",
+        "a": "Network address translation (NAT) gateways are highly available, fully managed, and connect to the internet/AWS services from a VPC"
+    },
+    "0e35b0bc-57bd-4516-9267-18f757556cd6": {
+        "q": "Describe the AWS Migration Evaluator",
+        "a": "the evaluator creates data driven buisness cases for AWS Cloud Planning and migration"
+    },
+    "8e0b1f53-cb73-42fa-9aef-0d51d76d828e": {
+        "q": "Desgin Prinicples of Operational Excellence",
+        "a": "Operations as code, small frequent changes, anticipate failure"
+    },
+    "032a9faf-fc85-4551-854b-10dc62d2a92c": {
+        "q": "What is the minimum charge time for a EC2 instance (price by the second)",
+        "a": "60s"
+    },
+    "a1f6d048-90b8-4db7-9f5a-3c0b73e044f9": {
+        "q": "Describe S3 IA",
+        "a": "standard infrequent access is for data that is accessed less frequently, but still needs fast return performance. ideal for ling term storage, abckups, and data for disaster recovery"
+    },
+    "b7d05cd8-bcba-4acb-9ec7-b888517ec2b5": {
+        "q": "Define Amazon EFS",
+        "a": "Amazon EFS provides a simple, scalable, fully managed elastic Netwrok File Storage for ON PREM and CLOUD resouces. It is built to scale on demand workloads"
+    },
+    "f8b836b2-4d2f-437c-8239-a5f0856d27f5": {
+        "q": "Define AWS Fargate",
+        "a": "Fargate is a serverless compute engine for containers. It works with both Amazon Elastic Container Service Amazon ELastic Kubernetes Service (EKS). Fargate makes it easy for your to focus on building you applications."
+    },
+    "c2266d71-4dd8-49fc-b64a-8dccc09083ad": {
+        "q": "Define Amazon Lex",
+        "a": "Chatbot"
+    },
+    "46c51c47-b350-409c-9d4f-1cb587264073": {
+        "q": "Define Amazon MQ",
+        "a": "MQ is a managed message broker service for apcheMQ and rabbitMQ"
+    },
+    "bac24006-15f8-4bbf-ac8c-ff7ed4e385d0": {
+        "q": "Define AWS Macie",
+        "a": "A service to discover vulnerabilities and protect senstive data stored in AWS"
+    },
+    "34fbd8f2-0d53-4095-b695-275e35cf3177": {
+        "q": "Define AWS DataSync",
+        "a": "DataSynce is an online data transfer servivce that simplifies, automates, and accelerates reading and writing to/from AWS storage services."
+    },
+    "d0a29ad6-1283-4152-916f-b23be18aed41": {
+        "q": "Define Amazon CodeGuru",
+        "a": "A developer tool that provides intelligent recomendations to improve the quality of code, and identify apps most ccomputationally expense programs to run."
+    },
+    "82e289b7-c065-4b83-bcec-e26966637352": {
+        "q": "Describe the AZ differences between EBS and EFS",
+        "a": "EBS volumes can only be connected to one instance in the same Availabilty zone, EFS volumes can be mounted on multiple instances in multiple Availability zones."
+    },
+    "44d07972-2dc9-450e-9659-72dc6b3a3ec2": {
+        "q": "Define Amazon EMR",
+        "a": "Amazon EMR is the industry leading big-data platform for processing large amounts of data using Hadoop/Apache SPark/... Not serverless, provisions EC2 instances to manage it's workloads"
+    },
+    "1579a5a5-6c25-4c40-98b1-037eae8b2f85": {
+        "q": "Define AWS Cost and Usage Reports",
+        "a": "Contain the most comprehensive data avilavle on AWS services, pricing, credit, fees, taxes, discounts, cost categories, etc... Available at the hourly, daily, or monthly level. This however can not estimate the monthly bill like the price calculator can"
+    },
+    "95dd0281-ab36-4225-8789-9658d67f7205": {
+        "q": "Define Amazon FSx for Lusture",
+        "a": "Only compatible for Linux, compute intensive workloads, ML, image proccessing. Provides a file system that is optimized for performance with I/O stored on S3."
+    },
+    "0e9d469e-e2de-418f-bd5b-b2b0a1d1ade8": {
+        "q": "Describe the developer support plan",
+        "a": "for testing/early development on AWS with email based technical support during buisness hours as well as architectural guidance as you build/test."
+    },
+    "c4a7d3e8-04e7-4fb3-83a8-330bd3c05a22": {
+        "q": "Define DynamoDB",
+        "a": "A key value and document database that delievers blazingly fast performance at any scale. It is fully amanged, multi region, multi master, secure, reliable, and in memory caching"
+    },
+    "699c325d-b762-4a8c-b15c-443acc764dd6": {
+        "q": "Define AWS IoT Core",
+        "a": "IoT Core lets you connect IoT devices to the AWS cloud without the need to provision servers. This can enable communication between devices and create a distributed device system."
+    },
+    "65176be5-3dbc-44ff-98ae-ff31ad671664": {
+        "q": "Define Instance Store",
+        "a": "A instance that provides temporary block level storage that is physicaly attached to the host computer. Good for when storage with low latency is required, but you don't need the information after the instance is terminated"
+    },
+    "cc7dac25-3f28-4152-928b-4c82f5105bf7": {
+        "q": "Describe the AMI",
+        "a": "Amazon Machine Image (AMI) provides the infor to launch an instance. You can luanch multiple instances from the same AMI to have the same configuration. The AMI must be in the same region as the EC2 isntance being launched. To mitigate this you can copy the AMI into different regions, then launch instances afterwards"
+    },
+    "b5ca6733-f00a-4578-8afb-d3d5090878f9": {
+        "q": "Define CodeDeploy",
+        "a": "CodeDeploy si a service that automate deployments to any instance, making it easy to release new features, and avoid downtime."
+    },
+    "7c6e1360-fed6-4b45-963a-a708d7adfdba": {
+        "q": "Define AWS Direct Connect",
+        "a": "A cloud service that establishes a private virtual interface from your on premises network, directly to your Amazon VPC."
+    },
+    "0dd5bd56-16f2-4ac4-bb1a-91e368ac95d9": {
+        "q": "Define AWS X-Ray",
+        "a": "A debugging serverless service for applications built on microservices. Allows you to troubleshoot the root cause of performance issues and errors."
+    },
+    "7919459f-c98c-47d5-97c5-d3e8b1a2d93e": {
+        "q": "Define AWS Artifact",
+        "a": "A central resource for compilance related information that matters for your organization. There is no cost for using this AWS resource"
+    },
+    "6ad484dc-b5ac-4265-8c64-b5515f989e1d": {
+        "q": "Describe MFA",
+        "a": "Multi factor authenitcation can be a code generated by an accounts personal device, or a U2F key that you plug into a USB port on your computer. Additionally a hardware device can be used to create a six digit code for authentication."
+    },
+    "82649155-af73-43f7-aa44-2249d326e45a": {
+        "q": "Define the difference between the systems manager and personal health dashboard",
+        "a": "Systems manager gives operational insights into resources, while personal health dashboard provides the running health status "
+    },
+    "3a371f08-182b-4f71-8ff7-bf2e879a9f1c": {
+        "q": "Amazon EC2 Instance Connect",
+        "a": "A simple Secure way to connect to your Linux instances using SSH on port 22"
+    },
+    "57eb4d55-c3db-444a-993c-4ef0f4075fcd": {
+        "q": "What service do you use to encrypt data before it reaches a S3 bucket",
+        "a": "AWS encyption before sending it to a bucket is called \"Client Side encryption\", it can be achieved with the Amazon SDK"
+    },
+    "a75f883d-fe6d-4840-8522-4a85e2f17a45": {
+        "q": "Define port 80",
+        "a": "HTTP traffic"
+    },
+    "70e923e7-35e6-480e-88ca-5d2e08ff9edf": {
+        "q": "Define AWS Glue",
+        "a": "A fully managed service to extract, transform, and load data for analytical purposes"
+    },
+    "88615457-a459-4789-87fb-198eaea7d1b4": {
+        "q": "Define Read Replicas for RDS",
+        "a": "Amazon RDS Read Replcias allow you to create read only copies that are synchronized with your master dataabse, and can be placed in a different region "
+    },
+    "c1c455a8-92c9-4bd7-9201-cc72fd4ea1f4": {
+        "q": "Define Amazon Forecast",
+        "a": "A ML SaaS product that an make time series predictions for retail demand, manufacturing demand, travel demand, revenue, etc.."
+    },
+    "0d64ff17-f024-4123-b8cc-7a8d85b2f0da": {
+        "q": "Define an internet gateway",
+        "a": "a horizontally scaled hgih available VPC component that allows communication between your VPC and the internet"
+    },
+    "d542c951-bb50-429f-b7aa-cac439001569": {
+        "q": "Define Transit gateway",
+        "a": "Connects on premises networks through a central hub to simplify the network that is automatically encrypted"
+    },
+    "832558da-f354-4a97-9bd8-f27ebe79b264": {
+        "q": "Define AWS Organizations",
+        "a": "AWS organizations helps you centrally manage billing, control access, compilance, security, and share resouces accross AWS accounts. A good practice is to make at least one acccout for each new department in your org.."
+    },
+    "c5e7c7fb-cd69-410f-bd9a-f6b7d077f281": {
+        "q": "Define Amazon Cognito",
+        "a": "Amazon Cognito lets you add user sign up, sign on, and access contorl to your web and mobile apps quicckly and easily. (users in your app, not accounts in aws)"
+    },
+    "1a89dc20-548c-42a2-8a77-c7882603cfb5": {
+        "q": "Describe VPC Endpoints",
+        "a": "A VPC Interface endpoint is an elastic network interface with a private IP that serves as an entry point for traffic powered by AWS PrivateLink. Gateway endpoints allows you to specify a target for a route in your routing table for traffic"
+    },
+    "ba932556-0bf0-44b2-8d41-1a976bf19ad3": {
+        "q": "Which services are meant to decouple components of a microservice application",
+        "a": "SNS and SQS"
+    },
+    "23d6c30c-8813-4543-a67f-ad4e4754c51b": {
+        "q": "What is a Amazon VPC Endpoint",
+        "a": "anables you to privately connect your VPC to supported AWS Services without needed a internet gateway, NAT DEVICE, VPN, or Direct Connect. Does not work to cconnect on premises data centers to the cloud."
+    },
+    "3e420783-654a-4422-a0ba-763b9f1b0317": {
+        "q": "Define NACLs",
+        "a": "allows or denies specific inbound/outbound traffic at the subnet level. Each subnet must be associated with a NACL."
+    },
+    "ec023f39-6927-4fe5-bd68-2d4afd22e483": {
+        "q": "Describe the enterprise support plan",
+        "a": "provides a concierge like support, wity 24/7 tenchincal engineer contacts, and a Technical account manager (TAM) "
+    },
+    "7594da7f-aeef-413d-988d-427805560743": {
+        "q": "Define AWS Wavelength",
+        "a": "AWS Wavelength extends the AWS Cloud to a global network of 5G locations enables developers to innovate apps for ultra low latency."
+    },
+    "9326682a-c138-4ffe-a574-a9c787adeeaa": {
+        "q": "Define AWS Trusted Advisor",
+        "a": "An online tool to provide realtime guidance to help you provision your resources following the AWS best practices"
+    },
+    "de6561fa-f97e-410e-a82a-a3ca72c71e90": {
+        "q": "Define AWS IoT Core",
+        "a": "New Card Answer"
+    },
+    "99dd5c18-5397-4de2-81de-9acce450a0fd": {
+        "q": "Define AWS Compute Optimizer",
+        "a": " recommends optimal AWS resources for your workloads to reduce costs and improve performance"
+    },
+    "3c5f427e-76c0-4a58-a722-4cdaba017f94": {
+        "q": "Define NAT Instances",
+        "a": "Network address translation (NAT) instances is a user managed instance that connects to the internet/other AWS services form a VPC. Provides total customization over NAT Gateways"
+    },
+    "56638269-d6d3-4468-89d9-a90b2cfd4c34": {
+        "q": "Describe S3 intelligent tiering",
+        "a": "designed to optimize costs by automatically moving data to the most cost effectivce tier"
+    },
+    "d7d15d21-4e21-4fb3-b882-bf0032a7e5ed": {
+        "q": "Define Amazon VPC",
+        "a": "Amazon VPC is a logically isolated partition of the ccloud where you can launch AWS resources in a virtually defined network that you have complete control over. This includes IP ranges, Subnets, route tables, and gateways. A VPC spans over all AZs in a region, subnets then are made for each AZ"
+    },
+    "740ba6f7-7d49-4ccf-a48e-72da79129e9d": {
+        "q": "Define scalability",
+        "a": "the ability to grow your infrastructure by accomodating an increase in demand, or shrink when there is a diminishing demand"
+    },
+    "7c93fdad-e4d4-47c9-821b-9e151937be61": {
+        "q": "AWS WAF offers protection from common web axploits at which layer",
+        "a": "Layer 4 and 7"
+    },
+    "6d419ac7-3a4e-4435-98a4-1cb81588775e": {
+        "q": "Define VPC Peering",
+        "a": "Peering is a network connection between two VPCs that allow you to route traffice between them privately."
+    },
+    "e222a5b1-0a2e-4f3e-8731-3147a7786729": {
+        "q": "Define the AWS Service Health Dashboard",
+        "a": "A updated up list of all AWS servies and their availability on the global scale."
+    },
+    "f0aa8731-d6a2-4ebd-80ff-00af093687af": {
+        "q": "Define CodeCommit",
+        "a": "CodeCommit is a fully managed service to host secure git based repositories, making it easy for teams to collaborate on code in a secure and highly scalable ecosystem. "
+    },
+    "57a39fe4-af0c-4e8a-9080-01342009db08": {
+        "q": "Design prinicples of performance effiency pillar",
+        "a": "Democratize advanced tech, go global in minutes, use serverless architectures, experiment often, consider mechanical sympathy"
+    },
+    "19dfbf74-0ab7-49fc-bb34-9a7ced861886": {
+        "q": "Define AWS CloudTrail",
+        "a": "A service that enables governence, auditing of your account. Allows you log, monitor, and retain account activity related to actions across your infrastructure. Tracks all activity from the Management console, SDKs, CLIs, etc.."
+    },
+    "b6609b9e-0964-41df-90e8-1b1d3563069b": {
+        "q": "Define Amazon SNS",
+        "a": "Amazon Simple Notification service is highly available, durable, secure, and fully managed. It is a service that allows you to decouple microservices, systems, and applications by sending messages (SMS, email, add other messaging services)"
+    },
+    "01bc2917-af77-422a-b7d1-0a6f5d697062": {
+        "q": "Define port 22",
+        "a": "SSH traffic"
+    },
+    "dabf4cbf-0199-450c-993a-45794d6f046f": {
+        "q": "What is active to passive",
+        "a": "One connection handles traffic, and the other is on standby. If the active connection becomes unavailable, then all traffic is routed through the passive connection."
+    },
+    "caefd4e7-be46-439d-891c-925b67369ae5": {
+        "q": "Define CodePipline",
+        "a": "CodePipline is a continuous delivery service that enables you to model, visualize, and automate that steps required to release your software. Integrates with CodeCommit, S3, CodeBuild... Must be integrated with CodeDeploy for actual deploymnet "
+    },
+    "66cc46e8-bf4f-4bbb-911c-fe12f227bb8f": {
+        "q": "Define Amazon ElastiCache",
+        "a": "ElastiCache allows you to set up run and scale popular in memory data stores in the cloud. Popular for uses like caching, session stores, gaming, geospatial services etc.."
+    },
+    "9647e080-91f8-4351-b29a-4a60945f22c3": {
+        "q": "define the AWS Global Accelerator",
+        "a": "improves the performance of your apps with local or global users by providing static IPs that act as a fixed entry point to your app endpoints. "
+    },
+    "3c5e9dc7-5028-41fe-82ef-c2b558f39453": {
+        "q": "Can you remove an account from AWS Organizations",
+        "a": "Yes, only if the account can operate as a standalone account"
+    },
+    "f870b478-6e55-4e9f-bb2a-94e1a27e8cfb": {
+        "q": "Define AWS Database Migration Service",
+        "a": "helps you migrate databses to the AWS cloud quickly allowing the source database to be operation during migration"
+    },
+    "6a0d46c6-0e07-482f-9b50-dc29395563cc": {
+        "q": "Define the AWS Professional services",
+        "a": " a global team of experts that can help you relize your desired buisness outfcomes when using the AWS Cloud. Can accelerate the infrastructure migration for your startup"
+    },
+    "0f2d69c8-01d7-47fe-9cc7-38d7e47a0a91": {
+        "q": "Define Amazon Macie",
+        "a": "Amazon Macie is a fully managed data privacy and security servie to monitor sensitive information stored in your S3 buckets."
+    },
+    "8df591d9-ceb9-4770-b3ae-a3a63eab737e": {
+        "q": "Define CodeArtifact",
+        "a": "A fully managed package organization storage device and publisher that can be used in the development process. Commonly works with Maven, Gradle, NPM, PIP, etc."
+    },
+    "468e672b-87e0-4ec0-8f8f-0aeee3fdd39d": {
+        "q": "Define Reliability",
+        "a": "The ability to recover from infrastrcuture or service distruptions by dynamically acquiring resources to meet demand"
+    },
+    "c3f726ba-fcaa-4995-ad00-53879fcf1a7d": {
+        "q": "Define AWS personal Health Dashboard",
+        "a": "A personalized list of all your resources and their status"
+    },
+    "68039920-d361-4f69-bb65-628f3f205c1a": {
+        "q": "Describe the discount options for reserved instances",
+        "a": "Upfront payment provides an increasing amount of discount, whereas 3 year reservations will always provide more discounts than 1 year options"
+    },
+    "aa629226-616f-4a8f-bf36-26f0bd6b3fc4": {
+        "q": "Describe On demand instances",
+        "a": "no upfront payment or time commitment, good for apps with short and spiky workloads, first time apps in developement."
+    },
+    "437e2e67-5206-4585-879c-e45615bdf7b3": {
+        "q": "Define agility",
+        "a": "The ability to rapidly develop, test and launch software apps that drive buisness growth"
+    },
+    "d94a18a1-bb41-4933-ad11-6a0873811851": {
+        "q": "Define AWS SDK",
+        "a": "Amazon software developer kit (SDK) take the complexity out of coding, by providing language specific APIs for AWS services."
+    },
+    "57df5a2d-a1d4-472b-a328-ca6b00efc4d9": {
+        "q": "Describe s3 versioning",
+        "a": "versioning can be explained as keep multiple variants of an object in the same bucket, allowing you to easily recover from unintended / application failures"
+    },
+    "130deb7b-b965-4c95-bc20-6c30a9c704d5": {
+        "q": "Define Amazon signle sign on",
+        "a": "Single sign on is a service that makes it easy to centrally manage access to multiple AWS accounts and buisness applications"
+    },
+    "955306eb-836f-4b74-8c7b-825749c7b175": {
+        "q": "Define Amazon Transcribe",
+        "a": "Speech to Text"
+    },
+    "2bcf8ed9-2ae7-4860-a380-1f5445289498": {
+        "q": "What are the main drivers of cost in AWS ",
+        "a": "Storage, Compute, and out bound transfer"
+    },
+    "1e0bcb8f-11a3-4708-83d1-5651ec42d65e": {
+        "q": "Define Amazon EBS",
+        "a": "Amazon Elastic Block store is a easy to use, high performing servied designed for EC2."
+    },
+    "55336102-e5e9-4f9c-afa4-9246d7a06601": {
+        "q": "Define CloudFormation",
+        "a": "Allows you to use programming languages to model and provision, in an automated secure fashion, all the resources needed for your applications across all regions and accounts. THis is IaC, infrastructure as Code"
+    },
+    "7330731b-48ac-47fd-876d-79751072e3ce": {
+        "q": "Define Amazon Redshift",
+        "a": "A fully managed petabyte cloud data warehouse for large scale data set storage and analysis"
+    },
+    "aa7ca4b2-47eb-48d5-92c2-e4ea4620a0ac": {
+        "q": "Which service can be used to review compliance and government related documents on AWS",
+        "a": "AWS Artifact"
+    },
+    "abd09524-5806-42d3-bccc-bc1fc1dc6d31": {
+        "q": "What service should you use to create billing alarms",
+        "a": "Amazon CloudWatch"
+    },
+    "fb6c4335-85ab-471e-bb8b-298044a70e5e": {
+        "q": "Define SaaS",
+        "a": "Provides you with a complete product that is run and managed by the service provider. There is no underlying management required. (Amazon Polly, Transcribe, Translate, etc..)"
+    },
+    "94abe74d-dd3c-419d-85af-8091c43080a0": {
+        "q": "Define Amazon Kendra",
+        "a": "Kendra is an intelligent search service powered by ML to help you find the contnet you are looking for, even when is is scattered across multiple locations, formats, unstructured natural language, etc.."
+    },
+    "1ca8e06d-1644-41ab-a9a9-09cd3faec1d9": {
+        "q": "Define Amazon RDS",
+        "a": "Amazon Relational Database Service makes it easy to setup, operate, and scale a relational databse. Fast performane, highly available, does not support active to active setup"
+    },
+    "6e1323f6-8ca2-4bd5-b375-54dc2f20ce4d": {
+        "q": "Define AMazon Aurora",
+        "a": "A MySQL/PostgreSQL RDS built for the cloud, that combines the performance and avilability of traditional databases with the cost effectiveness of open source databases."
+    },
+    "499bf9e5-6b66-445e-be52-2183b230c6d2": {
+        "q": "Define the AWS CDK",
+        "a": "The amazon cloud development kit is an opensource framework to define your cloud application resources using familar programming languages. CDK projects help generate CloudFormation "
+    },
+    "0782f0a8-2608-40c2-be36-0cdd1be2695f": {
+        "q": "Define AWS CLI",
+        "a": "The amazon CLI is a command line interface (CLI) that allows you to control services form the terminal, and automate them with scripts"
+    },
+    "891dc413-6862-4ea8-af4c-a6e70a1abd17": {
+        "q": "Define AWS Cost Explorer",
+        "a": "An easy to use interface that lets you visualize, understand, and manage your AWS costs and usage over time. This is more focused on finding cost savings, where as another service like Compute Optimzer will find the most efficent soltuions to recommend, regarless of the savings beenfits"
+    },
+    "946c5f29-322b-4f35-a703-1601d83f604f": {
+        "q": "Define PaaS",
+        "a": "Platform as a Service removes the need to manage infrastructure and allows you to focus on the deployment and management of your apps. (This is elastic Beanstalk)"
+    },
+    "78a5aadf-558c-4000-af9c-e6d233f43a5f": {
+        "q": "Define AWS CloudHSM",
+        "a": "A hardware security module (HSM) that enables you to easily generate and use your encryption keys on the AWS Cloud."
+    },
+    "72ef55ef-51ff-4ae6-8a41-0eadb1ee738a": {
+        "q": "What is AWS Step Function",
+        "a": "Step Function lets you coordinate multiple services into serverless workflows. (Ex. Lambda -> Glue -> SageMaker)"
+    },
+    "e24b8009-654f-4f03-afe2-41e9079e1f02": {
+        "q": "Define AWS Marketplace",
+        "a": "A digital catalog with thousands of software listings that make it easy to find, test, buy, and deploy software that runs on AWS."
+    },
+    "70a89980-bcac-4eea-bbd5-7dacb1984969": {
+        "q": "DEfine AMazon QLDB",
+        "a": "Quantum Ledger Database is a fully managed ledger db that provides transparent, immutable, and verifiable transaction lofs owned by a central trusted authority."
+    },
+    "0abf1415-4e9d-4f93-954d-3749cd3a254b": {
+        "q": "What is the difference between a dedicated host and a dedicated instance",
+        "a": "Hosts are billed by the hour, can bring your own license, and allow for total control over the compute power placed on the host. Dedicated hots are billed by the instance, and and do not offer the customizability that dedicated hosts offer. "
+    },
+    "f7157ddf-4e62-4c87-a5d3-913e136ea900": {
+        "q": "Describe the difference between Amazon AMI and Amazon EC2 Image Builder",
+        "a": "Image builder allows you to SIMPLIFY the byuilding/testing and deployment of containers, while the AMI provides the functionality to launch an instance from a containerized image"
+    },
+    "43323389-dcd3-47b2-a493-ced9f5f807ae": {
+        "q": "Define Amazon EC2",
+        "a": "EC2 is a web service that provides secure, resizable compute capacity in the cloud. You can use it ot provision servers."
+    },
+    "74aaac03-5f27-43a7-b39b-9affbd6196ca": {
+        "q": "Define the AWS Partner Network",
+        "a": "The Amazon APN is a partner program for tech and consulting buisnesses that leverage Amazon Web services to build solutions and services for customers."
+    },
+    "63aa9de2-efb8-4777-a94b-5003110d1ab1": {
+        "q": "Define Amazon FSx",
+        "a": "Amazon FSx is a Windows File Server that is fully managed hgihly reliable and scalable. "
+    },
+    "7d84c5b2-fd95-4df9-be25-9f79bdc61562": {
+        "q": "Define Amazon Polly",
+        "a": "A service that turns text into speech"
+    },
+    "00f71133-55ce-4a4a-9179-c63b8dccbc83": {
+        "q": "Define AWS BAtch",
+        "a": "Batch is a service that allows you to plan, schedule and execute your batch computing  workloads across the full range of AWS compute services. Automatically provisions compute/storage resources"
+    },
+    "bb200773-67d9-4b7e-9b9f-3bb2fab6fa21": {
+        "q": "Define Amazon Personalize",
+        "a": "A recommendation algorithm"
+    },
+    "505bbd8f-824d-4d09-8983-40a1fdd190af": {
+        "q": "Define CodeBuild",
+        "a": "Code build is a fully managed integration service to compiles source code, run tests, and produces software packages that are ready to deploy into the cloud."
+    },
+    "a15764d6-71fb-4cfa-82db-161d31950f29": {
+        "q": "Define Local zones",
+        "a": "Allow you to use a select amount of AWS services for ver low latency access to the apps running locally. Not to be cconfused with a Edge Location (a place for CloudFront to cache data)"
+    },
+    "53f71d7a-e9cd-4d2a-91bd-16305801efb9": {
+        "q": "Define Amazon OpsWorks",
+        "a": "a config management service that provides managed instanes of Chef and Puppuet."
+    },
+    "2b80bb3c-5c63-4a66-a36e-a59d311dc9af": {
+        "q": "Define AWS Shield",
+        "a": "a service that protects against DDoS attacks. Works with Route53 and CloudFront to protect against layer 3/4 attacks. The Shield Advanced service provides additional detection for real time detection paired with AWS WAF"
+    },
+    "39d99e5e-7bf2-4cba-be29-bd31a762c652": {
+        "q": "Compare NACL to Security Group",
+        "a": "Nacl manages traffic I/O of a subnet, security groups manage traffic I/O of a instance"
+    },
+    "f04e253a-a78a-4dc9-b4d7-4ae3d0f65bee": {
+        "q": "What are the components of a site to site VPN",
+        "a": "a site to site vpn offers two VPN tunnels between a virtual private gateway/transit gateway on the AWS Side, and a customer gateway on the remote (on premises side)"
+    },
+    "8e8b5ddd-9b10-4224-b350-9dad55871e3c": {
+        "q": "Describe App load balancers",
+        "a": "used from balancing HTTP/HTTPS traffic"
+    },
+    "2ff71819-595a-4e3a-8c3c-1ceffefeb546": {
+        "q": "Define AWS Budgets",
+        "a": "Allows a userto set custom spending budgets to track cost/usage. Additionally, allows you to be notified via SNS or email. Even allowing you to run automated management services."
+    },
+    "ccca799b-07bf-42b2-ab6c-0d02c6509ad6": {
+        "q": "Define Elasticity",
+        "a": "The ability to acquire resources as you need and release when they are no longer needed "
+    },
+    "7eaf67ee-e862-4b7f-a99d-633beb53ba79": {
+        "q": "Define site to site VPN",
+        "a": "A secure connection between on prem data centers and the cloud that goes over the public internet"
+    },
+    "0c70522f-1606-4dd3-81d6-88e9d87415b2": {
+        "q": "Define AWS Secrets Manager",
+        "a": "This service enables you to easily rotate, and manage your database credentials, API keys, and other secrets. Users and apps use the Secrets Manager API to retrieve all the secrets."
+    },
+    "de2a471b-ba54-4807-85d7-4a1b35253af9": {
+        "q": "Define AWS Systems Manager Sessions Manager",
+        "a": "AWS SSM Sessions Manager is a fully managed service that provides you with an interactive CLI to provide secure and auditable instance management without the need to open ports, maintain hosts, and manage SSH keys."
+    }
+}
