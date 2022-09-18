@@ -27,7 +27,7 @@ class Deck():
         return [Flashcard(uuid, obj) for uuid, obj in card_set.items()]
 
     def quiz_me(self):
-        Quiz(name=self.name, cards=self.read_cards())
+        Quiz(name=self.name, cards=self.read_cards(), results_dir=os.path.join(self.root_path, 'results'))
 
     def set_flashcards_path(self):
         print(os.listdir(self.root_path))

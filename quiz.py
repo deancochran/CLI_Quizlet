@@ -10,8 +10,8 @@ class Quiz():
         Quiz is a class object to utilize deck objects to provide a CLI interface for the user to perform 
         a quiz on the preloaded flashcards
     """
-    def __init__(self, name, cards):
-        self.results_dir = 'results'
+    def __init__(self, name, cards, results_dir):
+        self.results_dir=results_dir
         self.name=name
         self.cards=[card for card in cards]
         self.answered_cards=[]
