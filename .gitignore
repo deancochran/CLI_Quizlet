@@ -129,4 +129,10 @@ dmypy.json
 .pyre/
 
 /results/*
+<<<<<<< HEAD
 *_flashcards/*
+=======
+*_flashcards/*
+.DS_Store
+results/*
+>>>>>>> 0b03de5 (v2 format)
