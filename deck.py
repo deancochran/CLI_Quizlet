@@ -1,93 +1,105 @@
 import json
 import os
-
+from tabnanny import verbose
+import time
+from numpy import max
+import uuid
 from flashcard import Flashcard
 from quiz import Quiz
-class Deck(): 
-    def __init__(self,flashcard_folders_dir):
-        self.flashcard_folders_dir=flashcard_folders_dir
-        self.flashcards_path=None
+class Deck():
+    """
+        Deck is a class object that represents a collection of Flashcard objects that can be sorted, 
+        shuffled, and collected via their index position
+    """
+    def __init__(self, flashcards_root_dir):
+        assert os.path.exists(flashcards_root_dir) == True
+        self.root_path = flashcards_root_dir
+        self.flashcards_path = None
+        self.current_card_index=0
         self.deck_editor()
 
-    @property
-    def size(self):
-        return len(os.listdir(self.flashcards_path))
-
     def deck_loaded(self):
-        return self.flashcards_path != None
+        return self.root_path != None
+
+    def read_cards(self):
+        with open(self.flashcards_path, 'r') as f:
+            card_set = json.load(f)
+        return [Flashcard(uuid, obj) for uuid, obj in card_set.items()]
+
+    def quiz_me(self):
+        Quiz(name=self.name, cards=self.read_cards())
 
     def set_flashcards_path(self):
-        assert os.path.exists(self.flashcard_folders_dir) == True
-        assert len(os.listdir(self.flashcard_folders_dir)) > 0
-        available_decks=[filename for filename in os.listdir(self.flashcard_folders_dir) if 'flashcards' in filename and '.' not in filename]
+        print(os.listdir(self.root_path))
+        available_decks={i: filename for i, filename in enumerate([deck for deck in os.listdir(self.root_path) if 'flashcards.json' in deck])}
+        assert len(available_decks) > 0
         flag=False
         while flag==False:
             os.system("clear")
-            print('Available Decks: ',list(available_decks))
-            name = str(input('Enter a Deck Name: '))
-            if name in list(available_decks):
-                self.name=name
-                flag=True
-        self.flashcards_path = f'{self.flashcard_folders_dir}/{name}'
+            print('Available Decks: ')
+            for i, name in available_decks.items():
+                print(f'{i}: {name}')
+            print(' ')
+            str_id = input('Enter a Deck id: ')
+            if str_id.isdigit():
+                id=int(str_id)
+                if id in available_decks.keys():
+                    self.name=available_decks[id].split('.')[0]
+                    flag=True
+            
+        self.flashcards_path = f'{self.root_path}/{self.name}.json'
 
-    def read_cards(self):
-        return [Flashcard(json.loads(open(os.path.join(self.flashcards_path, card_filename),"rb").read()), self.flashcards_path, i) for i, card_filename in enumerate(os.listdir(self.flashcards_path))]
-
-    def flashcard_editor(self):
+    def deck_editor(self,verbose=False):
         os.system('clear')
-        cards=self.read_cards()
-        assert self.size == len(cards)
-        print(f'Deck {self.name} has {self.size} cards')
+        print('Deck Editor View','\n')
         print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
-        print('len(cards)',len(cards))
-        print('self.current_card_index',self.current_card_index)
-        current_card_obj=cards[self.current_card_index].to_json()
-        print('Current Card:')
-        print('Question: ',current_card_obj['q'])
-        print('Answer: ',current_card_obj['a'])
+        if self.flashcards_path == None:
+            print(f'Deck Editor located at path: {self.root_path}')
+            print(f'No Deck Loaded')
+        else:
+            print(f'Deck Editor located at path: "{self.root_path}"')
+            print(f'Deck {self.name} has path: "{self.flashcards_path}"')
         print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
-        print(' ')
-        print(f"""Action Keys: next card == " enter ", edit card == " E ", add card == " A ", remove card == " R ", exit == " Q " """)
+        if verbose:
+            print('Loading a deck with at least one card is required to edit and quiz ')
+        else:
+            print(' ')
+        print(f"""Action Keys: quit == " enter ", load deck == " L ", edit deck == " E ", take a quiz == " Q ", new deck == " N " """)
+                
         key = str(input('Action Key: '))
         if key == "":
-            self.current_card_index = (self.current_card_index+1)%len(cards)
-            self.flashcard_editor()
-        elif key.lower() == "e":
-            cards[self.current_card_index].edit()
-            cards[self.current_card_index].save()
-            self.flashcard_editor()
-        elif key.lower() == "a":
-            card=Flashcard({'q':'New Card','a':'New Card Answer'}, self.flashcards_path, len(cards))
-            card.edit()
-            card.save()
-            self.flashcard_editor()
-        elif key.lower() == "r":
-            card=cards.pop(self.current_card_index)
-            card.remove()
-            if len(cards)>0:
-                for i, card in enumerate(cards):
-                    card.remove()
-                    card.set_card_index(i)
-                    card.save()
-                self.current_card_index = (self.current_card_index+1)%len(cards)
-                self.flashcard_editor()
-            else:
-                os.rmdir(self.flashcards_path)
+            print('Closing Editor')
+        elif key.lower() == "l":
+            self.set_flashcards_path()
+            self.deck_editor()
+            
         elif key.lower() == "q":
-            pass
+            if self.deck_loaded() == True and len(self.read_cards())>0:
+                self.quiz_me()
+            else:
+                self.deck_editor(verbose=True)
+                
+        elif key.lower() == "e":
+            if self.deck_loaded():
+                self.flashcard_editor()
+                self.deck_editor()
+            else:
+                self.deck_editor(verbose=True)
+                
+        elif key.lower() == "n":
+            self.make_new_deck()
+            self.deck_editor()
         else:
-            self.flashcard_editor()
-
-    def quiz_me(self, results_dir='results'):
-        Quiz(name=self.name, cards=self.read_cards(), results_dir=results_dir)
+            self.deck_editor(verbose=True)
 
     def make_new_deck(self):
         os.system("clear")
         flag=False
         while flag==False:
             self.name = str(input('What do you want to call your ~new~ deck: '))
+            self.flashcards_path = f'{self.root_path}/{self.name}.json'
             os.system("clear")
-            if os.path.exists(f'{self.flashcard_folders_dir}/{self.name}'):
+            if os.path.exists(f'{self.flashcards_path}'):
                 print(f'A Deck with {self.name} already exists. Please enter a different name')
             elif "flashcards" != self.name.split('_')[-1]:
                 print(f'A Deck must end with "_flashcards" or be called "flashcards". Please adjust your name')
@@ -100,54 +112,59 @@ class Deck():
                     return True
                 else:
                     pass
-        self.flashcards_path = f'{self.flashcard_folders_dir}/{self.name}'
-        if os.path.exists(self.flashcards_path) == False:
-            os.mkdir(self.flashcards_path)
-        card=Flashcard({'q':'This is your first card','a':'You can add more once this is made'}, self.flashcards_path, len(self.read_cards()))
-        card.edit()
-        card.save()
+        with open(f'{self.flashcards_path}', 'w') as f:
+            json.dump(dict(),f)
+            
+    def save_cards(self, cards):
+        with open(f'{self.flashcards_path}', 'w') as f:
+            data={}
+            for card in cards.values():
+                obj=card.to_json()
+                data[obj['id']]=obj['qa']
+            json.dump(data,f, indent=4)
 
-    def deck_editor(self,verbose=False):
+    def flashcard_editor(self, card_set = None):
+        if card_set != None:
+            cards = {i: flashcard for i, flashcard in enumerate(card_set.values())} 
+        else:
+            cards = {i: flashcard for i, flashcard in enumerate(self.read_cards())} 
         os.system('clear')
-        print('Deck Editor View','\n')
+        self.size = len(cards)
+        print(f'Deck {self.name} has {self.size} cards')
         print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
-        if self.flashcards_path == None:
-            print(f'Deck Editor located at path: {self.flashcard_folders_dir}')
-            print(f'No Deck Loaded')
-        else:
-            print(f'Deck Editor located at path: "{self.flashcard_folders_dir}"')
-            print(f'Deck {self.name} has path: "{self.flashcards_path}"')
-        print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
-        if verbose:
-            print('Loading a deck is required to edit and quiz ')
-        else:
-            print(' ')
-        print(f"""Action Keys: quit == " enter ", load deck == " L ", edit deck == " E ", take a quiz == " Q ", new deck == " N " """)
-                
+        if self.size>0:
+            current_card=cards[self.current_card_index]
+            print(f'Current Card Index: {self.current_card_index}')
+            print('Question: ',current_card.get_q())
+            print('Answer: ',current_card.get_a())
+            print('_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _')
+        print(' ')
+        print(f"""Action Keys: next card == " enter ", edit card == " E ", add card == " A ", remove card == " R ", exit == " Q " """)
         key = str(input('Action Key: '))
-        if key == "":
-            print('Closing Editor')
-        elif key.lower() == "l":
-            self.set_flashcards_path()
-            self.deck_editor()
-        elif key.lower() == "e":
-            if self.deck_loaded():
-                self.current_card_index = 0
-                self.flashcard_editor()
-                self.deck_editor()
+        if key == "" and self.size>0:
+            self.current_card_index = (self.current_card_index+1)%len(cards)
+            self.flashcard_editor(cards)
+        elif key.lower() == "e" and self.size>0:
+            cards[self.current_card_index].edit()
+            self.flashcard_editor(cards)
+        elif key.lower() == "a":
+            id=str(uuid.uuid4())
+            obj={'q':'new question...','a':'new answer...'}
+            card=Flashcard(id, obj)
+            card.edit()
+            if self.size == 0:
+                card_index = 0
             else:
-                self.deck_editor(verbose=True)
+                card_index = max(list(cards.keys())) + 1
+            cards[card_index] = card
+            self.flashcard_editor(cards)
+        elif key.lower() == "r" and self.size>0:
+            del cards[self.current_card_index]
+            if len(cards) != 0:
+                self.flashcard_editor(cards)
+            else:
+                os.remove(self.flashcards_path)
         elif key.lower() == "q":
-            if self.deck_loaded() == True:
-                self.quiz_me()
-                self.deck_editor()
-            else:
-                self.deck_editor(verbose=True)
-        elif key.lower() == "n":
-            self.make_new_deck()
-            self.current_card_index = 0
-            self.flashcard_editor()
-            self.deck_editor()
+            self.save_cards(cards)
         else:
-            self.deck_editor(verbose=True)
-
+            self.flashcard_editor()

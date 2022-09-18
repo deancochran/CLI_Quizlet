@@ -4,19 +4,65 @@ import time
 import json
 import os
 from flashcard import Flashcard
-class Quiz():
-    def __init__(self, name: str, cards, results_dir: str):
-        
-        self.name=name
-        self.cards=cards
-        self.results_dir=results_dir
 
+class Quiz():
+    """
+        Quiz is a class object to utilize deck objects to provide a CLI interface for the user to perform 
+        a quiz on the preloaded flashcards
+    """
+    def __init__(self, name, cards):
+        self.results_dir = 'results'
+        self.name=name
+        self.cards=[card for card in cards]
+        self.answered_cards=[]
         self.start_size=len(cards)      
         self.answered=0
-        self.first_card_shown=False
-        self.answered_cards=[]
         self.start_quiz()
+        
+    def get_rand_card(self) -> Flashcard:
+        return random.choice(self.cards)
+        
+    def get_input(self):
+        key = str(input('Action Key: '))
+        if key == "":
+            self.skip()
+        elif key == "'":
+            self.flip_card()
+        elif key == ";":
+            self.remove_card()    
+        else:
+            print('\r',end='')
+            self.get_input()
+
+    def show_quiz(self):
+        os.system ('clear')
+        complete=self.answered/self.start_size
+        print(f'Finished {complete:.2f}% of Deck: "{self.name}"')
+        print(f"""Action Keys: skip == " enter ", flip== " ' ", remove == " ; " """)
+        print(' ')
+        self.current_card.show()
+        self.get_input()
+
+    def remove_card(self):
+        self.answered+=1
+        self.answered_cards.append(self.cards.pop(self.cards.index(self.current_card)))
+        if self.answered != self.start_size:
+            self.current_card = self.get_rand_card()
+            self.show_quiz()
+        else:
+            self.end_time=datetime.datetime.now()   
+            self.show_quiz_results()
+
+    def flip_card(self):
+        self.current_card.flips+=1
+        self.current_card.flip()
         self.show_quiz()
+
+    def skip(self):
+        self.current_card.skips+=1
+        self.current_card = self.get_rand_card()
+        self.show_quiz()   
+        
 
     def to_json(self):
         data={}
@@ -47,51 +93,6 @@ class Quiz():
         self.save_quiz_results()
         time.sleep(3)
 
-    def remove_card(self):
-        self.answered+=1
-        self.answered_cards.append(self.cards.pop(self.cards.index(self.current_card)))
-        if self.answered != self.start_size:
-            self.current_card = self.get_rand_card()
-            self.show_quiz()
-        else:
-            self.end_time=datetime.datetime.now()   
-            self.show_quiz_results()
-
-    def flip_card(self):
-        self.current_card.flips+=1
-        self.current_card.flip()
-        self.show_quiz()
-
-    def skip(self):
-        self.current_card.skips+=1
-        self.current_card = self.get_rand_card()
-        self.show_quiz()
-
-    
-    def get_input(self):
-        key = str(input('Action Key: '))
-        if key == "":
-            self.skip()
-        elif key == "'":
-            self.flip_card()
-        elif key == ";":
-            self.remove_card()    
-        else:
-            print('\r',end='')
-            self.get_input()
-
-    def show_quiz(self):
-        os.system ('clear')
-        complete=self.answered/self.start_size
-        print(f'Finished {complete:.2f}% of Deck: "{self.name}"')
-        print(f"""Action Keys: skip == " enter ", flip== " ' ", remove == " ; " """)
-        print(' ')
-        self.current_card.show()
-        self.get_input()
-            
-    def get_rand_card(self):
-        return random.sample(self.cards, 1)[0]
-
     def start_quiz(self):
         for i in reversed(range(5)):
             os.system ('clear')
@@ -103,5 +104,6 @@ class Quiz():
                 print(f'GO!')
                 time.sleep(1)
         self.start_time=datetime.datetime.now()
-        self.current_card=self.get_rand_card()
-
+        self.current_card = self.get_rand_card()
+        self.show_quiz()
+ 

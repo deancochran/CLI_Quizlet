@@ -13,7 +13,7 @@
     },
     "10e86feb-0bb9-4e97-8fb2-fc8d486ba1b6": {
         "q": "Define Route 53",
-        "a": "Route 53 is a highly available domain name system (DNS) service. Simple routing is used for a single resource that performs a function for your domain. Failover routing is for active to passice failovers. Geolocation routing takes into account the geolocation of the requester. Geoproximity routes based off the prximity to the resource center. Latency routing takes into account the best performance for the requester. Weighted routing propotions the amount of requests at each available resource."
+        "a": "Route 53 is a highly available domain name system (DNS) service. Simple routing is used for a single resource that performs a function for your domain. Failover routing is for active to passive failover. Geolocation routing takes into account the geolocation of the requester. Geoproximity routes based off the proximity to the resource center. Latency routing takes into account the best performance for the requester. Weighted routing proportions the amount of requests at each available resource."
     },
     "7a3a0788-9431-4c38-9369-5f62cb461aa5": {
         "q": "Define Function as a Service",
@@ -21,15 +21,15 @@
     },
     "247f36db-72fb-4f19-bde5-15508bdee571": {
         "q": "Define Service Quotas",
-        "a": "Service quotas enables you to view and manage your quotas for AWS Services  frpm a central location"
+        "a": "Service quotas enables you to view and manage your quotas for AWS Services  from a central location"
     },
     "6b41b267-a975-4839-a33f-2844e514b8b7": {
         "q": "AWS Config",
-        "a": "a service that enables you to assess, audit, and evalutate the configuration of your AWS resources. "
+        "a": "a service that enables you to assess, audit, and evaluate the configuration of your AWS resources. "
     },
     "7c35757d-0732-455c-a7c8-fe43c7d9f769": {
         "q": "Define Amazon Inspector",
-        "a": "An automated security assessment service to improve the security and compilance of applications deployed on AWS (like EC2s)"
+        "a": "An automated security assessment service to improve the security and compliance of applications deployed on AWS (like EC2s)"
     },
     "c952e6a0-9694-4f18-8ea8-e816e42a1ce4": {
         "q": "Define Amazon Translate",
@@ -37,11 +37,11 @@
     },
     "bddd1ec4-2d11-4de6-9e39-28875e29308d": {
         "q": "Define AWS CloudFront",
-        "a": "A fast content delivery network service that securely delivers data, vides, apps, and apis to global customers. This can be paired with edge locations to create caches of information to increae overall read performance of a web based app."
+        "a": "A fast content delivery network service that securely delivers data, video, apps, and apis to global customers. This can be paired with edge locations to create caches of information to increase overall read performance of a web based app."
     },
     "b6aa2447-e2cf-412b-a84b-2f8ff706a406": {
         "q": "Define AWS Beanstalk",
-        "a": "an easy to use service for deploying and scaling web applications and services. You simply uploadyour code and Elastic Beanstalk automatically handles deployment, and provisions the necessary servers."
+        "a": "an easy to use service for deploying and scaling web applications and services. You simply upload your code and Elastic Beanstalk automatically handles deployment, and provisions the necessary servers."
     },
     "01d95d4c-866c-4087-be89-701bf9169bb0": {
         "q": "What is active to active",
@@ -49,11 +49,11 @@
     },
     "5ece1a1b-0ca3-4a0a-ad29-678cab4ffa27": {
         "q": "Define AWS Budgets",
-        "a": "a service that provides you with the ability to set up customized spending budgets that alert you when you approach/exceed/ or underutilize your allocated amount. Can be used at the monthly/quarterly/yearly level."
+        "a": "a service that provides you with the ability to set up customized spending budgets that alert you when you approach/exceed/ or underutilized your allocated amount. Can be used at the monthly/quarterly/yearly level."
     },
     "f9dac790-82ce-47a7-a021-2a96123c8d2c": {
         "q": "Describe cost allocation tags",
-        "a": "this is a simple label that you or aws assigns to a resource. The tag is a key value pairing where each tag key must be unique. Both user defined and aws defined tags must be actviated before they show up in cost explorer."
+        "a": "this is a simple label that you or aws assigns to a resource. The tag is a key value pairing where each tag key must be unique. Both user defined and aws defined tags must be activated before they show up in cost explorer."
     },
     "596070e5-639d-4101-ae87-f086269eda1f": {
         "q": "Amazon Polly",
@@ -61,14 +61,14 @@
     },
     "7a90c0a7-97c5-4c68-90f5-77d9378b3a7d": {
         "q": "Describe Network load balancers",
-        "a": "Best suited for balancing transmission control protocol (TCP), User Datagram protocol (UDP), and transport layer security (TLS) traffic where extreeme performance is required."
+        "a": "Best suited for balancing transmission control protocol (TCP), User Datagram protocol (UDP), and transport layer security (TLS) traffic where extreme performance is required."
     },
     "6ebad2ab-b1ad-4608-ac51-d89488b2477c": {
         "q": "Define Amazon Comprehend",
         "a": "NLP machine learning "
     },
     "dfe5ee6a-f00c-4734-bc95-8a866fc4673c": {
-        "q": "Define the AWS price calcuator",
+        "q": "Define the AWS price calculator",
         "a": "lets you explore the cost of AWS services and create an estimate of the cost of your use cases on AWS"
     },
     "12dea307-32ef-4cfd-ad6b-c9159518bf74": {
@@ -77,11 +77,11 @@
     },
     "83a08fdc-d692-492f-ad67-8080cb89e01f": {
         "q": "Define AWS Auto Scaling",
-        "a": "Auto sclaing monitors apps ans automatically adjusts capcity to maintain steady, predictable performance at the lowest possible cost."
+        "a": "Auto scaling monitors apps ans automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost."
     },
     "69f19fff-64b6-4597-8c08-0b34f47e88ec": {
         "q": "Define AWS Storage Gateway",
-        "a": "a hybrid cloud storage service that connets your existing on premises enviornments with the AWS Cloud"
+        "a": "a hybrid cloud storage service that connects your existing on premises environments with the AWS Cloud"
     },
     "29fe9fdd-d8ad-44c8-abb7-c16ebb5c3dbe": {
         "q": "Describe spot instances",
@@ -93,15 +93,15 @@
     },
     "f9707c9a-6ea0-4723-8b9b-91b759715cf3": {
         "q": "Define Amazon Lightsail",
-        "a": "An easy to use, cloud platform that offiers you everything needed to build an application or website, plus a cost effective, monthly plan. "
+        "a": "An easy to use, cloud platform that officers you everything needed to build an application or website, plus a cost effective, monthly plan. "
     },
     "e9703b00-04d8-42c3-b8a3-c14b7e4939af": {
         "q": "Define Amazon SageMaker",
-        "a": "Amazon Sagemaker is a fully managed platform that enables developers and data scientitst to buid train and deploy ML models."
+        "a": "Amazon Sagemaker is a fully managed platform that enables developers and data scientists to build train and deploy ML models."
     },
     "7aa64c58-7ba9-4241-9c20-9ec8779ae62e": {
         "q": "Define S3 Glacier Deep Archive",
-        "a": "Lowest cost storage class that supports long term retention and digital preservation for data that may be accessed once or twince in a year. with retrieal timeof 12/48 hours. "
+        "a": "Lowest cost storage class that supports long term retention and digital preservation for data that may be accessed once or twice in a year. with retrieval time outs of 12/48 hours. "
     },
     "09035b9b-a1df-4165-884c-c46fbb3bcb8a": {
         "q": "what IAM tools allows you to review permissions granted to users",
@@ -116,16 +116,16 @@
         "a": "AWS Compute Optimizer"
     },
     "0b436a24-31d5-440d-8e1a-4878a386fa10": {
-        "q": "Define AWS GaurdDuty",
-        "a": "GuardDuty monitors for threats, malicious activity, and unauthorized behaviour to protect your AWS account."
+        "q": "Define AWS GuardDuty",
+        "a": "GuardDuty monitors for threats, malicious activity, and unauthorized behavior to protect your AWS account."
     },
     "2afeb75b-f8d5-40bb-8f21-69cc33a539ea": {
         "q": "Define AWS IAM",
         "a": "Amazon Identity and Access Management allows you to manage access to services and resources securely. You can create users/groups and allocate their permissions."
     },
     "d9d6a263-2d17-4e12-b89e-b822590172b8": {
-        "q": "Design prinicples of cost optimization",
-        "a": "Implement cloud financial management, adpot a consumption model, measure overall efficiency, stop spending money on undfiferentiated heavy lifting, analyze and attribute expenditure"
+        "q": "Design principles of cost optimization",
+        "a": "Implement cloud financial management, adopt a consumption model, measure overall efficiency, stop spending money on undifferentiated heavy lifting, analyze and attribute expenditure"
     },
     "b0de03c6-4dbe-48f0-b04d-64668b1ead2a": {
         "q": "Define Amazon Sumerian",
@@ -136,20 +136,20 @@
         "a": "The Amazon Key Management Service (KMS) offers additional benefits that S3 server side encryption does not offer (audit trail, unauthorized access protection)"
     },
     "fc6e6ad8-1484-4882-bd15-44ab6966f0ed": {
-        "q": "What two services in combinatino can send alerts of a root account sign in",
+        "q": "What two services in combination can send alerts of a root account sign in",
         "a": "SNS and CloudWatch"
     },
     "253380d2-3ef4-47cd-8e95-8d6185268838": {
-        "q": "Design prinicples of Sustainability pillar",
-        "a": "Understand your impact, esatblish sustainability goals, maximize utilization, anticipate and adpot new, more efficent hardware, use manage services, reduce downstream impact of cloud workloads"
+        "q": "Design principles of Sustainability pillar",
+        "a": "Understand your impact, establish sustainability goals, maximize utilization, anticipate and adopt new, more efficient hardware, use manage services, reduce downstream impact of cloud workloads"
     },
     "03417ea7-a6d4-4f05-a5b9-f65ab150ea61": {
         "q": "What is IaaS",
-        "a": "Infrastructure holds the building blocks of the cloud IT. Access to networking features, computers, and data storage. Holds the Highest level of flexibilty. (This is EC2)"
+        "a": "Infrastructure holds the building blocks of the cloud IT. Access to networking features, computers, and data storage. Holds the Highest level of flexibility. (This is EC2)"
     },
     "c81a75bb-d33e-4781-a125-99c6e873a9dc": {
         "q": "DEfine AWS Service Catalog",
-        "a": "alllows organizations to create and amange catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual amchine images, servers, software, and datbases to complete multitier apps"
+        "a": "allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multiplier apps"
     },
     "849e505d-abeb-4e33-adc3-8185512174bf": {
         "q": "Define CMK",
@@ -164,8 +164,8 @@
         "a": "HTTP/HTTPS requests at the application layer"
     },
     "007e3afd-d4b8-40c0-b455-10a3b5709a57": {
-        "q": "Desgin principles of security pillar",
-        "a": "Implement strong Identity foundation, enable tracability, apply security at all layers, automate security best practices, prtect data in transit/rest"
+        "q": "Design principles of security pillar",
+        "a": "Implement strong Identity foundation, enable traceability, apply security at all layers, automate security best practices, protect data in transit/rest"
     },
     "c5d76218-8334-4ad9-adbf-61891f5dacab": {
         "q": "Define Security Groups for Amazon VPCs",
@@ -204,12 +204,12 @@
         "a": "Define Amazon Kinesis processes real time streaming data to get analytical results. (Videos, media, website clickstreams, etc..)"
     },
     "853b005a-8304-4227-bba7-46250dcafa33": {
-        "q": "What service will help organizations with many VPCs connect for better ccollaboration",
+        "q": "What service will help organizations with many VPCs connect for better collaboration",
         "a": "AWS Transit Gateway"
     },
     "3e18371a-d0a9-472a-ace4-301a9f675231": {
         "q": "Describe layer 3",
-        "a": "The netowrk layer desides which physcial path data will take when it moves on the network. WAF doesn't provide protection here. AWS Sheild provides protection here."
+        "a": "The network layer desires which physical path data will take when it moves on the network. WAF doesn't provide protection here. AWS Shield provides protection here."
     },
     "665c5948-eaf8-45dd-8127-adf170ab8bc8": {
         "q": "Define port 443",
@@ -220,24 +220,24 @@
         "a": "a cloud based development service that provides the tools you need to quickly develop, build, and deploy apps"
     },
     "c546d2df-0356-4eef-a12d-08ebf626f96d": {
-        "q": "Design prinicples of Reliability",
+        "q": "Design principles of Reliability",
         "a": "automate recovery from failure, test recovery procedures, scale horizontally, stop guessing capacity, manage change in automation"
     },
     "b17ee628-f9cc-414c-9abd-d5d456a4290f": {
         "q": "Describe Amazon DynamoDB with Global Tables",
-        "a": "DynamoDB is a fully managed, serverless, key-value noSQL database desgined to run performance apps at any scale. The Global Tables extension to this database replicates data automatically across AWS regions, and scales to accomodate your workloads with single digit millisecond I/O performance"
+        "a": "DynamoDB is a fully managed, serverless, key-value noSQL database designed to run performance apps at any scale. The Global Tables extension to this database replicates data automatically across AWS regions, and scales to accommodate your workloads with single digit millisecond I/O performance"
     },
     "d18d9094-8dd1-4fb9-bfcd-f9a201606f90": {
-        "q": "Describe the Buisness Support Plan",
+        "q": "Describe the Business Support Plan",
         "a": "For production workloads and 24/7 phone/email/chat technical support. Fully access to trusted advisor"
     },
     "241d9fbb-38d4-4015-8d06-428751dbe7a7": {
         "q": "describe S3 lifecycle rules",
-        "a": "to manage s3 objects so they are stored in a cost effective manner, lifecycle rules allow you to trznsition the objects to less extensive storage classes, archive them, or even delete them.p"
+        "a": "to manage s3 objects so they are stored in a cost effective manner, lifecycle rules allow you to transition the objects to less extensive storage classes, archive them, or even delete them.p"
     },
     "cb07fbd8-026d-4141-abf9-6c187b758a57": {
         "q": "Define Amazon SQS",
-        "a": "A fully managed servicex that enables you to decouple ans scale microservices, distributed sytems, and serverless apps. You can send, store, and recieve messages between software components without requirements."
+        "a": "A fully managed serviced that enables you to decouple and scale microservice, distributed systems, and serverless apps. You can send, store, and recieve messages between software components without requirements."
     },
     "4fdfe5c9-ee7d-4245-bf33-287f1f1f20e9": {
         "q": "What service can help implement Chaos Engineering",
