@@ -130,9 +130,15 @@ dmypy.json
 
 /results/*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *_flashcards/*
 =======
 *_flashcards/*
 .DS_Store
 results/*
 >>>>>>> 0b03de5 (v2 format)
+=======
+*_flashcards/*
+.DS_Store
+results/*
+>>>>>>> v2
