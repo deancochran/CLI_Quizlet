@@ -168,3 +168,6 @@ class Deck():
             self.save_cards(cards)
         else:
             self.flashcard_editor()
+            
+if __name__ == "__main__":
+    Deck('./flashcards')    
