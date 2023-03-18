@@ -45,9 +45,11 @@ class Quiz():
 
     def remove_card(self):
         self.answered+=1
+        self.current_card.end_timer()
         self.answered_cards.append(self.cards.pop(self.cards.index(self.current_card)))
         if self.answered != self.start_size:
             self.current_card = self.get_rand_card()
+            self.current_card.start_timer()
             self.show_quiz()
         else:
             self.end_time=datetime.datetime.now()   
@@ -60,19 +62,31 @@ class Quiz():
 
     def skip(self):
         self.current_card.skips+=1
+        self.current_card.end_timer()
         self.current_card = self.get_rand_card()
+        self.current_card.start_timer()
         self.show_quiz()   
         
 
     def to_json(self):
-        data={}
-        for card in self.answered_cards:
-            data[card.q]={
-                    'answer':card.a,
-                    'flips':card.flips,
-                    'skips':card.skips,
-                }
-        data['time']=str(self.total_time)
+        columns = ['card_id','question','answer','flips', 'skips', 'card_time']
+        data={col:list() for col in columns}
+        for col in columns:
+            for card in self.answered_cards:
+                if col == 'card_id': 
+                    data[col].append(card.id)
+                elif col == 'question': 
+                    data[col].append(card.q)
+                elif col == 'answer': 
+                    data[col].append(card.a)
+                elif col == 'flips': 
+                    data[col].append(card.flips)
+                elif col == 'skips': 
+                    data[col].append(card.skips)
+                elif col == 'card_time': 
+                    data[col].append(card.elapsed_time)
+                else:
+                    raise Exception('attribute of card result == "{col}" is not implemented')
         return data
 
     def save_quiz_results(self):
@@ -105,5 +119,6 @@ class Quiz():
                 time.sleep(1)
         self.start_time=datetime.datetime.now()
         self.current_card = self.get_rand_card()
+        self.current_card.start_timer()
         self.show_quiz()
  

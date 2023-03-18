@@ -1,4 +1,5 @@
 import os
+import datetime
 class Flashcard():
     """
         Flashcard is a class that represents a single question and answer set which can be identified by
@@ -11,6 +12,7 @@ class Flashcard():
         self.flips=0
         self.skips=0
         self.side = 0
+        self.elapsed_time = 0.0
     
     def get_q(self) -> str:
         return self.q
@@ -32,6 +34,13 @@ class Flashcard():
             self.side = 1
         else:
             self.side = 0
+     
+    def start_timer(self):
+        self.start_time = datetime.datetime.now()
+
+    def end_timer(self):
+        self.end_time = datetime.datetime.now()
+        self.elapsed_time += float((self.end_time - self.start_time).seconds)
 
     def to_json(self):
         return {'id':self.id, 'qa':{'q':self.q, 'a':self.a}}
